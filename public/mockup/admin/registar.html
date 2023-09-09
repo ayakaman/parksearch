@@ -1,47 +1,4 @@
-<!--
-@extends('layout')
-
-{{-- メインコンテンツ --}}
-@section('contets')
--->
-
-<!DOCTYPE html>
-<html lang="ja">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>公園検索 mypage</title>
-        <link rel="stylesheet" type="text/css" href="/css/style.css">
-    </head>
-    <body>
-      <header>
-        <nav>
-            <h1 class="heading">
-              <img src="/images/park.png">
-            </h1>
-            <ul class="nav-list">
-                <li class="nav-list-item">
-                   <a href="index.html" style="text-decoration:none;">Home</a>
-                </li>
-                <li class="nav-list-item">
-                   <a href="index.html" style="text-decoration:none;">mypage</a>
-                </li>
-                <li class="nav-list-item">
-                   <a href="index.html" style="text-decoration:none;">search</a>
-                </li>
-            </ul>
-        </nav>
-      </header>
-
-      <div class="main">
-         <img src="/images/t1.png">
-         <img src="/images/t2.png">
-       </div>
-       <div class="search">
-         <div class="mv-search"></div>
-         <div class="mv-text"></div>
-       </div>
-       <div class="post">
+ <div class="post">
        <h1>New Park Post</h1>
             <form action="/park_search/register" method="post">
                 @csrf
@@ -70,13 +27,3 @@
                 <button>entry</button>
             </form>
        </div>
-<!--
-@yield('contets')
--->
-       <footer>
-         <p class="footer-text">©2023</p>
-       </footer>
-
-    </body>
-</html>
-<!-- @endsection -->
