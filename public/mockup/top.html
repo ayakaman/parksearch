@@ -1,0 +1,65 @@
+<!--
+@extends('layout')
+
+{{-- メインコンテンツ --}}
+@section('contets')
+-->
+
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>公園検索 mypage</title>
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+    </head>
+    <body>
+      <header>
+        <h1 class="heading">
+          <img src="/images/park.png">
+        </h1>
+      </header>
+      <div class="main">
+         <img src="/images/t1.png">
+         <img src="/images/t2.png">
+       </div>
+       <div class="search">
+         <div class="mv-search"></div>
+         <div class="mv-text"></div>
+       </div>
+
+       <div class="post">
+       <h3>New Park Post</h3>
+            <form action="/park_search/register" method="post">
+                @csrf
+                公園名<br>
+                <input name="name" class="form-text"><br>
+                住所<br>
+                <input name="address" type="text" class="form-text"><br>
+                画像<br>
+                <input type="file" name="image"><br>
+                <br>
+                遊具の種類:<br>
+                    <label><input name="play" type="checkbox" value="1">滑り台</label> /
+                    <label><input name="play" type="checkbox" value="2">ブランコ</label> /
+                    <label><input name="play" type="checkbox" value="3">鉄棒</label> /
+                    <label><input name="play" type="checkbox" value="4">雲梯（うんてい）</label><br>
+                    <label><input name="play" type="checkbox" value="5">はん登棒（はんとうぼう）</label> /
+                    <label><input name="play" type="checkbox" value="6">スイング遊具</label> /
+                    <label><input name="play" type="checkbox" value="7">シーソー</label><br>
+                    <label><input name="play" type="checkbox" value="8">砂場</label> /
+                    <label><input name="play" type="checkbox" value="9">ジャングルジム</label> /
+                    <label><input name="play" type="checkbox" value="10">その他</label><br>
+                <button>entry</button>
+            </form>
+       </div>
+<!--
+@yield('contets')
+-->
+       <footer>
+         <p class="footer-text">©2023</p>
+       </footer>
+
+    </body>
+</html>
+<!-- @endsection -->
