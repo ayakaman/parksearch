@@ -33,7 +33,7 @@ nav {
   -webkit-text-stroke: 1px #fdfdfd;
 }
 
-a:visited {
+a {
   color: #ebca00;
   -webkit-text-stroke: 10px #888;
 }
