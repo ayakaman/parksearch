@@ -27,29 +27,32 @@
          <div class="mv-search"></div>
          <div class="mv-text"></div>
        </div>
-
        <div class="post">
-       <h3>New Park Post</h3>
+       <h1>New Park Post</h1>
             <form action="/park_search/register" method="post">
                 @csrf
-                公園名<br>
-                <input name="name" class="form-text"><br>
-                住所<br>
-                <input name="address" type="text" class="form-text"><br>
+                <br>
+                <input class="form-text" name="name" placeholder="公園名"><br>
+                <br>
+                <input class="form-text" name="address" type="text" placeholder="住所"><br>
+                <br>
                 画像<br>
-                <input type="file" name="image"><br>
+                <br>
+                <input type="file" name="image" ><br>
                 <br>
                 遊具の種類:<br>
+                <br>
                     <label><input name="play" type="checkbox" value="1">滑り台</label> /
                     <label><input name="play" type="checkbox" value="2">ブランコ</label> /
                     <label><input name="play" type="checkbox" value="3">鉄棒</label> /
                     <label><input name="play" type="checkbox" value="4">雲梯（うんてい）</label><br>
                     <label><input name="play" type="checkbox" value="5">はん登棒（はんとうぼう）</label> /
-                    <label><input name="play" type="checkbox" value="6">スイング遊具</label> /
-                    <label><input name="play" type="checkbox" value="7">シーソー</label><br>
+                    <label><input name="play" type="checkbox" value="6">スイング遊具</label><br>
+                    <label><input name="play" type="checkbox" value="7">シーソー</label> /
                     <label><input name="play" type="checkbox" value="8">砂場</label> /
                     <label><input name="play" type="checkbox" value="9">ジャングルジム</label> /
                     <label><input name="play" type="checkbox" value="10">その他</label><br>
+                    <br><br>
                 <button>entry</button>
             </form>
        </div>
